@@ -18,9 +18,3 @@ build:
     when: on_success
     paths:
     - target/*.jar
-
-pages:
-  stage: deploy
-  artifacts:
-    paths:
-    - public
