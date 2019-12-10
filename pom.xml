@@ -5,6 +5,43 @@
     <artifactId>maven-test</artifactId>
     <version>0.1</version>
     <packaging>jar</packaging>
+	<repositories>
+		<repository>
+			<id>net.rlp.gitlab-retcat-lib</id>
+			<url>https://gitlab.rlp.net/api/v4/projects/8178/packages/maven</url>
+		</repository>
+		<repository>
+			<id>net.rlp.gitlab-rdf4j-ext</id>
+			<url>https://gitlab.rlp.net/api/v4/projects/8183/packages/maven</url>
+		</repository>
+		<repository>
+			<id>net.rlp.gitlab-jena-ext</id>
+			<url>https://gitlab.rlp.net/api/v4/projects/8182/packages/maven</url>
+		</repository>
+	</repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+		<dependency>
+            <groupId>link.labeling.retcat</groupId>
+            <artifactId>retcat</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+		<dependency>
+            <groupId>org.linkedgeodesy.rdf4jext</groupId>
+            <artifactId>rdf4jext</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+		<dependency>
+            <groupId>org.linkedgeodesy.jenaext</groupId>
+            <artifactId>jena-ext</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
